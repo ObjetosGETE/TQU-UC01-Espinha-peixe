@@ -13,8 +13,9 @@
 <body>
   <div class="conteudo m-1">
     <div id="tela1">
-      <div class="intro-frases-encaixa ">
-        <h1>O diagrama de Ishikawa</h1>
+      
+      <div class="intro-frases-encaixa">
+        <h1 class="title-encaixa-frase">O diagrama de Ishikawa</h1>
         <p>Seja bem-vindo ao objeto de aprendizagem sobre o diagrama de Ishikawa, que também é conhecido como diagrama
           de
           causa e efeito. Essa ferramenta tem o objetivo de ilustrar as várias causas que levam a um problema. Você
@@ -23,10 +24,11 @@
           categorias, classificadas em 6 Ms: máquina, mão de obra, método, manutenção, material e meio ambiente.</p>
       </div>
       <div class="bg-tela-um">
-        <div class="paragrafo-intro w-50">
+        <img class="w-100 position-relative" src="assets/img/bg-confeitaria.png" alt="confeitaria clientes e funcionarios">
+        <div class="paragrafo-intro position-absolute">
           <p>Com este objeto de aprendizagem, você testará seus conhecimentos sobre o uso do diagrama de Ishikawa por
             meio
-            de uma situação fictícia. Vamos lá? </p>
+            de uma situação fictícia. <br>Vamos lá? </p>
           <button class="btn btn-lg btn-iniciar btn-block som-clique " data-bs-target="#exampleModalToggle"
             data-bs-toggle="modal">Começar</button>
         </div>
@@ -47,31 +49,32 @@
       <div class="row">
         <div data-resp="m" class="mercado-item col mercado-item-m" draggable="true">Inspeções de qualidade demoradas
         </div>
-        <div data-resp="m" class="mercado-item col mercado-item-m" draggable="true">Problemas com aplicativo de entrega
+        <div data-resp="p" class="mercado-item col mercado-item-p" draggable="true">Problemas com aplicativo de entrega
           on-line </div>
-        <div data-resp="o" class="mercado-item col mercado-item-o" draggable="true">Embalagens erradas rompendo-se no
+        <div data-resp="r" class="mercado-item col mercado-item-r" draggable="true">Embalagens erradas rompendo-se no
           transporte </div>
         <div data-resp="q" class="mercado-item col mercado-item-q" draggable="true">Trânsito intenso em horário de
           entregas </div>
-        <div data-resp="r" class="mercado-item col mercado-item-r" draggable="true">Falta de pessoal na equipe de
+        <div data-resp="o" class="mercado-item col mercado-item-o" draggable="true">Falta de pessoal na equipe de
           entrega
         </div>
-        <div data-resp="s" class="mercado-item col mercado-item-s" draggable="true">Erros no controle de pedidos no
+        <div data-resp="n" class="mercado-item col mercado-item-n" draggable="true">Erros no controle de pedidos no
           sistema </div>
-        <div data-resp="t" class="mercado-item col mercado-item-t" draggable="true">Produtos rejeitados no controle de
+        <div data-resp="p" class="mercado-item col mercado-item-p" draggable="true">Produtos rejeitados no controle de
           qualidade </div>
-        <div data-resp="u" class="mercado-item col mercado-item-u" draggable="true">Treinamento insuficiente para
+        <div data-resp="o" class="mercado-item col mercado-item-o" draggable="true">Treinamento insuficiente para
           entregadores </div>
-        <div data-resp="v" class="mercado-item col mercado-item-v" draggable="true">Clima adverso afetando a entrega
+        <div data-resp="q" class="mercado-item col mercado-item-q" draggable="true">Clima adverso afetando a entrega
+        </div>
+        <div data-resp="s" class="mercado-item col mercado-item-s" draggable="true">Atraso de entrega de doces e bolos
         </div>
       </div>
 
       <div class="espinha-de-peixe position-relative">
         <div class="imagens-peixe">
-          <img class="img-fluid " id="espinha" src="assets/img/espinha_de_Peixe.png" alt="">
-          <!-- <img class="img-fluid w-100" id="peixe" src="assets/img/peixe-inteiro.png" alt=""> -->
+          <!-- <img id="espinha" src="assets/img/peixe-inteiro.png" alt=""> -->
+          <img class="img-fluid w-100" id="peixe" src="assets/img/espinha_de_Peixe.png" alt="">
         </div>
-
 
 
         <div data-resp="m" class="espaco-mercado position-absolute col item item1"> </div>
@@ -81,8 +84,7 @@
         <div data-resp="r" class="espaco-mercado position-absolute col item item5"> </div>
         <div data-resp="s" class="espaco-mercado position-absolute col item item6"> </div>
         <div data-resp="t" class="espaco-mercado position-absolute col item item7"> </div>
-        <div data-resp="u" class="espaco-mercado position-absolute col item item8"> </div>
-        <div data-resp="v" class="espaco-mercado position-absolute col item item9"> </div>
+    
       </div>
     </div>
   </div>
@@ -92,11 +94,11 @@
     tabindex="-1">
     <div class="modal-dialog modal-dialog-centered modal-lg">
       <div class="modal-content">
-        <div class="modal-header">
+        <div class="modal-header bordinha">
           <h1 class="modal-title fs-5" id="exampleModalToggleLabel">Bem-vindo(a) técnico(a) em qualidade!</h1>
           <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
         </div>
-        <div class="modal-body row">
+        <div class="modal-body p-modal row">
 
           <p class="col-8"> Você é o(a) técnico(a) em qualidade de uma confeitaria chamada "Sonho Doce", especializada
             em produção
@@ -104,7 +106,7 @@
             por
             atrasos nas entregas e você foi chamado para verificar a causa do problema juntamente com a equipe de
             logística. Para isso, você deve utilizar as ferramentas da qualidade.</p>
-          <img src="assets/img/personagem.png" alt="" class="col-4">
+          <img src="assets/img/personagem.png" alt="" class="col-4 img-fluid">
         </div>
         <div class="modal-footer">
           <button class="btn btn-primary" data-bs-target="#exampleModalToggle2" data-bs-toggle="modal">Avançar</button>
@@ -116,11 +118,11 @@
     tabindex="-1">
     <div class="modal-dialog modal-dialog-centered modal-lg">
       <div class="modal-content">
-        <div class="modal-header">
-          <h1 class="modal-title fs-5" id="exampleModalToggleLabel2">Resultado brainstorming.</h1>
+        <div class="modal-header bordinha">
+          <h1 class="modal-title fs-5" id="exampleModalToggleLabel2">Resultado brainstorming</h1>
           <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
         </div>
-        <div class="modal-body row">
+        <div class="modal-body p-modal row">
           <p class="col-8">
             Um brainstorming foi realizado e chegou-se às seguintes possíveis causas:
 
@@ -142,7 +144,7 @@
 
             Clima adverso afetando a entrega
           </p>
-          <img class="col-4" src="assets/img/caneta.png" alt="">
+          <img class="col-4 img-fluid" src="assets/img/caneta.png" alt="">
         </div>
         <div class="modal-footer">
           <button class="btn btn-primary" data-bs-target="#exampleModalToggle" data-bs-toggle="modal">Voltar</button>
