@@ -1,10 +1,3 @@
-.bg-tela-um {
-	background-image: url('../img/bg-confeitaria.png');
-	background-size: cover;
-	background-position: center;
-	width: 100%;
-	height: 100vh;
-}
 .conteudo {
 	width: 1920px;
 	height: 1080px;
@@ -12,16 +5,30 @@
 	left: calc(50% - 1920px / 2);
 	top: calc(50% - 1080px / 2);
 	margin: auto;
+	padding: 5px;
 } 
 
-.estilo-paragrafo {
-	background-color: #ffffff;
-	color: #333333;
-	text-align: center;
-	padding: 5%;
+.intro-frases-encaixa {
+	background-color: #925655;
+	padding: 1%;
+	font-size: 23px;
+	color: white;
+	border-radius: 20px 20px 0 0px;
+	font-weight: bold;
+	padding-inline: 5%;
+}
+
+.paragrafo-intro {
+	top: 367px;
+	left: 95px;
+	background-color: white;
+	padding: 32px;
 	border-radius: 20px;
 	font-size: 23px;
-	width: 70%;
+	width: 487px;
+	font-weight: bold;
+	color: #925655;
+	box-shadow: 5px 5px 5px black;
 }
 
 .btn.btn-lg.btn-iniciar.som-clique {
@@ -37,22 +44,27 @@
 	color: #925655;
 }
 
-.title-encaixa-frase {
+.btn.btn-primary{
+	background-color: #925655 !important;
+	padding-inline: 10%;
+	font-weight: bold;
+	color: white;
+	border: none;
+}
+
+.btn.btn-primary:hover{
+	background-color: #ffc563 !important;
+	font-weight: bold;
 	color: #925655;
+}
+
+.title-encaixa-frase {
+	color: white;
 	font-weight: bold;
 	text-align: center;
 	margin-bottom: 28px;
-
 }
 
-.intro-frases-encaixa {
-	color: #925655;
-	padding: 2%;
-	font-size: 18px;
-	background: white;
-	border-radius: 20px;
-	font-weight: bold;
-}
 
 .espaco-mercado{
 	background-color: #333;
@@ -92,14 +104,26 @@
 	border-radius: 10px;
 	background-color: white;
 	color: #333;
+
+	font-weight: bold;
+	border: 2px dashed #925655;
+	margin: 1%;
+	font-size: 21px;
+
+}
+
+.item {
+	padding-bottom: 5px;
+	border-radius: 10px;
+	background-color: #fff0;
+	color: #333;
 	align-content: center;
 	gap: 10px;
 	align-items: center;
 	font-weight: bold;
 	border: 2px dashed #925655;
 	margin: 1%;
-	font-size: 20px;
-
+	font-size: 21px;
 }
 
 .item p {
@@ -107,68 +131,69 @@
 	width: 100%;
 	padding: 0px;
 	margin: 0px;
-	font-size: 20px;
+	font-size: 21px;
 }
 
 
 .item1 {
-	top: 353px;
-	left: 361px;
-	width: 200px;
-	height: 200px;
+	top: 158px;
+	left: 520px;
+	width: 229px;
+	height: 165px;
+	transform: rotate(-12deg);
 }
 
 .item2 {
-	top: 284px;
-	left: 661px;
-	width: 200px;
-	height: 200px;
+	top: 127px;
+	left: 791px;
+	width: 229px;
+	height: 165px;
+	transform: rotate(-3deg);
 }
 
 .item3 {
-	top: 285px;
-	left: 957px;
-	width: 200px;
-	height: 200px;
+	top: 134px;
+	left: 1058px;
+	width: 229px;
+	height: 165px;
+	transform: rotate(5deg);
 }
 
 .item4 {
-	top: 601px;
-	left: 411px;
-	width: 200px;
-	height: 200px;
+	top: 334px;
+	left: 561px;
+	width: 229px;
+	height: 165px;
+	transform: rotate(-12deg);
 }
 
 .item5 {
-	top: 533px;
-	left: 691px;
-	width: 200px;
-	height: 200px;
+	top: 304px;
+	left: 806px;
+	width: 229px;
+	height: 165px;
+	transform: rotate(-2deg);
 }
 
 .item6 {
-	top: 534px;
-	left: 967px;
-	width: 200px;
-	height: 200px;
+	top: 310px;
+	left: 1047px;
+	width: 229px;
+	height: 165px;
+	transform: rotate(5deg);
 }
 
 .item7 {
-	top: 310px;
-	left: -289px;
-	width: 200px;
-	height: 200px;
+	top: 325px;
+	left: 1343px;
+	width: 224px;
+	height: 174px;
+	background-color: #fdfdfdc2;
 }
 
-.item8 {
-	top: 549px;
-	left: -293px;
-	width: 200px;
-	height: 200px;
-}
-.item9{
-	top: 310px;
-	left: 10px;
-	width: 200px;
-	height: 200px;
+.bordinha{
+	background-color:  #925655;
+	color:white;
+	font-weight: bold;
+	font-size: 23px;
 }
