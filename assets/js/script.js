@@ -27,8 +27,8 @@ document.addEventListener('drop', function (event) {
       dropTarget.appendChild(draggedElement);
     }
   }
-  
- 
+
+
   const allItems = document.querySelectorAll('.mercado-item');
   const allSpaces = document.querySelectorAll('.espaco-mercado');
   let completed = true;
@@ -38,20 +38,20 @@ document.addEventListener('drop', function (event) {
       return;
     }
   });
-  
+
   if (completed) {
     openPositiveFeedbackModal();
   }
 });
 
 function openPositiveFeedbackModal() {
-  $('#modalFeedbackPositivo').modal('show');
+  $('#modalFeedbackFinal').modal('show');
 }
 
 $(document).ready(function () {
 
 
-  
+
   $(".mercado-item").on("dragstart", function (event) {
     $(this).addClass('dragging');
     event.originalEvent.dataTransfer.setData("text/plain", $(this).data('resp') + '-' + $(this).text());
@@ -76,10 +76,12 @@ $(document).ready(function () {
     if (parteProduto === espacoMercado) {
       $(this).removeClass('bg-danger');
       $("#audio-acerto")[0].play();
+      $('#modalFeedbackPositivo').modal('show');
     } else {
       $(this).addClass('bg-danger');
       $(".mercado-item").removeClass('dragging');
       $("#audio-errado")[0].play();
+      $('#modalFeedbackNegativo').modal('show');
     }
   });
 
