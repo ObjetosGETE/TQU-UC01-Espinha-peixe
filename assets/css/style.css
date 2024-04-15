@@ -8,6 +8,17 @@
 	padding: 5px;
 }
 
+ @media (max-width: 800px) {
+    .conteudo {
+        font-size: 1.2em; 
+		line-height: auto;
+		overflow: auto;
+    }
+	p {
+		font-size: 1.2em;
+	}
+} 
+
 .intro-frases-encaixa {
 	background-color: #925655;
 	padding: 1%;
@@ -87,6 +98,7 @@
 	font-weight: bold;
 	background-color: #fee9ce;
 	color: #925655;
+	text-transform: uppercase;
 }
 
 .mercado-item:hover {
